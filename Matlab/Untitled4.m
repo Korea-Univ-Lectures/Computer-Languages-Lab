@@ -1,0 +1,9 @@
+l11=0.6;
+l12=1.4;
+l2=0.5;
+A=[0:0.001:pi];
+B1=asin(l2*sin(A)/l11);
+B2=asin(l2*sin(A)/l12);
+d1=l11*cos(B1)+l2*cos(A);
+d2=l12*cos(B2)+l2*cos(A);
+plot(A,d1,A,d2);
